@@ -1,0 +1,6 @@
+---
+
+- hosts: nedi
+  become: true 
+  roles:
+  - nedi

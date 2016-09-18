@@ -1,0 +1,27 @@
+---
+
+- name: install packages
+  openbsd_pkg:
+    name={{ item }}
+    state=present
+  with_items:
+   - 'wget'
+   - 'nmap'
+   - 'openssl-1.0.2h'
+   - 'mariadb-server'
+   - 'mariadb-client'
+   - 'mariadb-tests'
+   - 'apache-httpd-2.4.23'
+   - 'php-5.6.23p0'
+   - 'php-mysql-5.6.23p0'
+   - 'net-snmp-5.7.3p8'
+   - 'p5-Net-Telnet-3.04'
+   - 'p5-Net-Telnet-Cisco-1.10p1'
+   - 'php-snmp-5.6.23p0'
+   - 'php-gd-5.6.23p0'
+   - 'p5-DBD-mysql-4.033'
+   - 'gd-2.1.1p3'
+   - 'rrdtool-1.6.0p0'
+   - 'p5-Crypt-OpenSSL-RSA-0.28p1'
+   - 'php-dba-5.6.23p0'
+   - 'p5-IO-Tty-1.12p0'
